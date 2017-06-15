@@ -1,9 +1,62 @@
 .card-container {
   background-color: white;
-  height: 330px;
-  width: 300px;
-  display: inline-block;
+  height: 230px;
+  width: 200px;
+  float: left;
   margin: 20px;
   border-radius: 4px;
   box-shadow: 0 6px 14px 0 rgba(209,223,243,0.36), 0 2px 4px 0 rgba(188,192,215,0.50);
+  transition: transform 0.2s ease;
+  text-align: center;
+  color: #353942;
+  transform: scale(1);
+}
+
+.card-container:hover {
+  transform: scale(1.1);
+}
+
+.card-avatar {
+  width: 80px;
+  border-radius: 3px;
+  margin-top: 33px;
+}
+
+.card-title {
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.card-followers {
+  font-family: menlo;
+  opacity: 0.6;
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 3px;
+}
+
+.card-button {
+  background-color: #1F9FFF;
+  border-radius: 3px;
+  width: 90px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+  font-weight: bold;
+  margin-top: 11px;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.card-button:hover {
+  opacity: 0.9;
+}
+
+.card-button-active {
+  background-color: #00C661;
 }
